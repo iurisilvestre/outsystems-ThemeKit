@@ -1,0 +1,31 @@
+@use "../../00-abstract" as *;
+///----------------------------------------------------------------------------
+///	!$7 - Useful Classes - Styles > Typography                                                       
+///----------------------------------------------------------------------------
+
+/*! Styles > Typography - Font Size */
+.font-size {
+	@each $type, $value in $font-sizes {
+		&-#{$type} {
+			font-size: var(--font-size-#{$type});
+		}
+	}
+}
+
+/*! Styles > Typography - Font Weight */
+.font {
+	@each $type, $value in $font-weights {
+		&-#{$type} {
+			font-weight: var(--font-#{$type});
+		}
+	}
+}
+
+/*! Styles > Typography - Alignment Types */
+.text-align {
+	@each $type, $value in $text-alignments {
+		&-#{$type} {
+			text-align: var(--text-align-#{$type});
+		}
+	}
+}

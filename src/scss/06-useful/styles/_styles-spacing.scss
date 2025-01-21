@@ -1,0 +1,62 @@
+@use "../../00-abstract" as *;
+///----------------------------------------------------------------------------
+///	!$7 - Useful Classes - Styles > Spacing                                                         
+///----------------------------------------------------------------------------
+
+/*! Styles > Spacing - Padding */
+.padding {
+	@each $type, $value in $sizes {
+		&-#{$type} {
+			padding: var(--space-#{$type});
+		}
+
+		@each $box-side in $box-sides {
+			&-#{$box-side}-#{$type} {
+				padding-#{$box-side}: var(--space-#{$type});
+			}
+		}
+
+		&-x-#{$type} {
+			padding-left: var(--space-#{$type});
+			padding-right: var(--space-#{$type});
+		}
+
+		&-y-#{$type} {
+			padding-bottom: var(--space-#{$type});
+			padding-top: var(--space-#{$type});
+		}
+	}
+
+	&-auto {
+		padding: 0 auto;
+	}
+}
+
+/*! Spacing - Margin */
+.margin {
+	@each $type, $value in $sizes {
+		&-#{$type} {
+			margin: var(--space-#{$type});
+		}
+
+		@each $box-side in $box-sides {
+			&-#{$box-side}-#{$type} {
+				margin-#{$box-side}: var(--space-#{$type});
+			}
+		}
+
+		&-x-#{$type} {
+			margin-left: var(--space-#{$type});
+			margin-right: var(--space-#{$type});
+		}
+
+		&-y-#{$type} {
+			margin-bottom: var(--space-#{$type});
+			margin-top: var(--space-#{$type});
+		}
+	}
+
+	&-auto {
+		margin: 0 auto;
+	}
+}

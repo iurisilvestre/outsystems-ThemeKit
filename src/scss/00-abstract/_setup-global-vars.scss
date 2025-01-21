@@ -1,0 +1,108 @@
+///----------------------------------------------------------------------------
+/// App Settings 																
+///----------------------------------------------------------------------------
+
+///Header Configurations
+$header-color: var(--color-neutral-0);
+$header-size: 74px;
+
+///SideMenu Configurations
+$side-menu-size: 260px;
+$side-menu-size-tablet: 48px;
+
+///Sidebar Configurations
+$side-sidebar-size-tablet: 360px;
+$side-sidebar-size: 450px;
+
+/// Footer Height Configurations
+$footer-size: 480px;
+
+
+///App Background Color Configurations
+$color-background-body: var(--color-neutral-0);
+$color-background-login: var(--color-neutral-0);
+
+///----------------------------------------------------------------------------
+/// Box Settings
+///----------------------------------------------------------------------------
+
+/// Box Sides
+$box-sides:
+'top',
+'right',
+'bottom',
+'left';
+
+$box-x-sides:
+'right',
+'bottom';
+
+$box-y-sides:
+'top',
+'bottom';
+
+/// Box Corners
+$box-corners:
+'top-left',
+'top-right',
+'bottom-right',
+'bottom-left';
+
+///----------------------------------------------------------------------------
+/// Borders
+///----------------------------------------------------------------------------
+
+/// Border Sizes
+$border-size:
+'none' 0,
+'s' 1px,
+'m' 2px,
+'l' 3px;
+
+/// Border Radius
+$border-radius-types:
+'none' 0,
+'soft' 4px,
+'rounded' 100px,
+'circle' 100%;
+
+/// Border Radius BoxSides
+$border-radius-box-sides:
+'top' 'left' 'right',
+'bottom' 'left' 'right';
+
+
+///----------------------------------------------------------------------------
+/// Space / Sizes															
+///----------------------------------------------------------------------------
+
+/// Predefined spaces / sizes
+$sizes:
+'none' 0,
+'xs' 4px,
+'s' 8px,
+'base' 16px,
+'m' 24px,
+'l' 32px,
+'xl' 40px,
+'xxl' 48px;
+
+///----------------------------------------------------------------------------
+/// Shadows																
+///----------------------------------------------------------------------------
+
+/// Shadow Types
+$shadow-types:
+'none' 'none',
+'xs' '0 1px 2px rgba(0, 0, 0, 0.1)',
+'s' '0 2px 4px rgba(0, 0, 0, 0.1)',
+'m' '0 4px 6px rgba(0, 0, 0, 0.1)',
+'l' '0 6px 8px rgba(0, 0, 0, 0.1)',
+'xl' '0 8px 10px rgba(0, 0, 0, 0.1)';
+
+
+/// /* iOS Safe Areas (Notch Support) */
+$os-safe-area-top: env(safe-area-inset-top);
+$os-safe-area-right: env(safe-area-inset-right);
+$os-safe-area-bottom: env(safe-area-inset-bottom);
+$os-safe-area-left: env(safe-area-inset-left);

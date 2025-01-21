@@ -1,0 +1,58 @@
+@use "../../00-abstract" as *;
+///----------------------------------------------------------------------------
+///	!$7 - Useful Classes - Styles > Colors                                                          
+///----------------------------------------------------------------------------
+
+/*! Styles > Colors - Brand */
+.background {
+	@each $type, $value in $colors-brand {
+		&-#{$type}{
+			background-color: var(--color-#{$type});
+		}
+	}
+}
+
+.text {
+	@each $type, $value in $colors-brand {
+		&-#{$type}{
+			color: var(--color-#{$type});
+		}
+	}
+}
+
+/*! Styles > Colors - Extended */
+.background {
+	@each $color, $variations in $colors-extended {
+		@each $type, $value in $variations {
+			&-#{$color} {
+				@if ($type == '') {
+					& {
+						background-color: var(--color-#{$color});
+					}
+				} @else {
+					&-#{$type} {
+						background-color: var(--color-#{$color}-#{$type});
+					}
+				}
+			}
+		}
+	}
+}
+
+.text {
+	@each $color, $variations in $colors-extended {
+		@each $type, $value in $variations {
+			&-#{$color} {
+				@if ($type == '') {
+					& {
+						color: var(--color-#{$color});
+					}
+				} @else {
+					&-#{$type} {
+						color: var(--color-#{$color}-#{$type});
+					}
+				}
+			}
+		}
+	}
+}

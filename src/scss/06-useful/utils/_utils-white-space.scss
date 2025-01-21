@@ -1,0 +1,9 @@
+///----------------------------------------------------------------------------
+///	!$7 - Useful Classes - White Space                                                        
+///----------------------------------------------------------------------------
+
+/*! Useful > White Space */
+.white-space{
+	&-no-wrap{ white-space: nowrap; }
+	&-pre-wrap{ white-space: pre-warp; }
+}

@@ -1,0 +1,26 @@
+///----------------------------------------------------------------------------
+///	!$7 - Useful Classes - Flexbox                                                        
+///----------------------------------------------------------------------------
+
+/*! Useful > Flexbox */
+.align-items{
+	&-flex-start{ align-items: flex-start; }
+	&-center{ align-items: center; }
+	&-flex-end{ align-items: flex-end; }
+	&-baseline{	align-items: baseline; }
+	&-stretch{	align-items: stretch; }
+}
+
+.justify-content{
+	&-flex-start{ justify-content: flex-start; }
+	&-center{ justify-content: center; }
+	&-flex-end{ justify-content: flex-end; }
+	&-space-around{ justify-content: space-around; }
+	&-space-between{ justify-content: space-between; }
+	&-space-evenly{ justify-content: space-evenly; }
+}
+
+.flex{
+	&-wrap{ flex-wrap: wrap; }
+	&-no-wrap{ flex-wrap: no-wrap; }
+}
